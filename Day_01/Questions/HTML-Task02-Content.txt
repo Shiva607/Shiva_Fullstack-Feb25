@@ -1,0 +1,33 @@
+Content :
+  The type of the first ol is uppercase roman numbers (I, II, III, IV ,V) and the start of all the inner ol is decimal numbers (1, 2, 3, 4 , 5)
+   <h2> - Nested list
+   <li> - Wedding
+   <li> - Bridal party
+   <li> - Engagement parties
+   <li> - Caterer
+   <li> - Wedding ceremony
+   <li> - Wedding reception
+   <li> - Corporate
+   <li> - Seminars and Conferences
+   <li> - Appreciation Events
+   <li> - Team Building Events
+   <li> - Product Launch Events
+   <li> - Shareholder Meetings
+   <li> - Exhibition
+   <li> - Aerophilately
+   <li> - Astrophilately
+   <li> - Fight against Forgeries
+   <li> - Maximaphily
+   <li> -Philatelic literature
+   <li> -Trade Shows     
+   <li> - Argentina
+   <li> -Bolivia
+   <li> -Brazil
+   <li> -Canada
+   <li> -Chile
+   <li> -Stage Events
+   <li> -Birthday party
+   <li> -Surprise party
+   <li> -Dinner party
+   <li> -Garden party
+   <li> -Cocktail party
