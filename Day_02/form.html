@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Form Elements</title>
+</head>
+
+<body>
+    <div align="center">
+        <form action="./links.html" method="post">
+            <fieldset style="width: 400px;">
+                <legend align="center">Basics Details</legend>
+                <table align="center">
+                    <tbody>
+                        <tr>
+                            <td> <label for="name">Name<span style="color: rgb(255, 0, 0);">*</span></label></td>
+                            <td><input id="name" type="text" placeholder="Enter your name" size="30" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email<span style="color: rgb(255, 0, 0);">*</span></label></td>
+                            <td><input id="email" type="email" placeholder="learning@gmail.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender</label></td>
+                            <td><input name="gender" value="male" type="radio" checked>Male
+                                <input name="gender" value="female" type="radio">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Skills</label></td>
+                            <td>
+                                <input value="html" type="checkbox" checked>HTML
+                                <input value="css" type="checkbox">CSS
+                                <input value="javaScript" type="checkbox">JavaScript
+                                <input value="nodejs" type="checkbox">NodeJS
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Country</label></td>
+                            <td>
+                                <select>
+                                    <option value="japan">Japan</option>
+                                    <option value="india" selected>India</option>
+                                    <option value="afghanistan">Afghanistan</option>
+                                    <option value="albania">Albania</option>
+                                    <option value="australia">Australia</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Country</label></td>
+                            <td>
+                                <select multiple>
+                                    <option value="india">India</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="afghanistan">Afghanistan</option>
+                                    <option value="albania">Albania</option>
+                                    <option value="australia">Australia</option>
+                                    <optgroup label="Country">
+                                        <option value="india">India</option>
+                                        <option value="japan">Japan</option>
+                                        <option value="afghanistan">Afghanistan</option>
+                                        <option value="albania">Albania</option>
+                                        <option value="australia">Australia</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2" align="left"><button>submit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
