@@ -1,0 +1,15 @@
+p {
+    color: green;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#main-heading {
+    color: blue;
+}
+
+.text-large {
+    font-size: xx-large;
+}
