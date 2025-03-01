@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Selectors</title>
+    <style>
+        div p {
+            color: red;
+        }
+
+        section>p {
+            background-color: lightblue;
+        }
+
+        h2+p {
+            background-color: lightgray;
+        }
+
+        h2~p {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Basics</h2>
+    <div>
+        <p>
+            CSS (Cascading Style Sheets) is used to style HTML elements on a webpage. It controls aspects like colors,
+            fonts, margins, and layouts. CSS helps separate content from design, making web pages more flexible.
+        </p>
+    </div>
+    <section>
+        <p>There are three ways to apply CSS: Inline, Internal, and External. Inline applies styles directly to
+            elements, while internal is placed inside style tags. External CSS is stored in a separate file and linked
+            to HTML for better maintainability.</p>
+    </section>
+    <section>
+        <h2>CSS Selectors</h2>
+        <p>CSS selectors help target HTML elements to apply styles efficiently. Common selectors include element (p),
+            class (.box), and ID (#header) selectors. These allow precise styling based on element type or assigned
+            attributes.</p>
+
+        <p>Combinators define relationships between elements for more specific styling. The descendant (div p) and child
+            (div > p) selectors target nested elements differently. Sibling selectors like adjacent (div + p) and
+            general (div ~ p) apply styles to elements that follow another.</p>
+
+        <p>Advanced selectors provide even more control over styling. Attribute selectors (input[type="text"]) target
+            elements based on attributes. Pseudo-classes (:hover, :nth-child(n)) allow styling based on user
+            interactions and element positions.</p>
+    </section>
+</body>
+
+</html>
