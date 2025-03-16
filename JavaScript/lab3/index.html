@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Objects</title>
+</head>
+
+
+<body>
+    <h2>Employee Details</h2>
+
+    <form style="margin-left: 40px;" action="">
+        <table>
+            <tbody>
+                <tr>
+                    <td><b>Employee Name</b></td>
+                    <td width="20">:</td>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <td><b>Employee ID</b></td>
+                    <td>:</td>
+                    <td id="id"></td>
+                </tr>
+                <tr>
+                    <td><b>Employee Designation</b></td>
+                    <td>:</td>
+                    <td id="designation"></td>
+                </tr>
+                <tr>
+                    <td><b>Employee Salary</b></td>
+                    <td>:</td>
+                    <td id="money"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <h2>Update Employee Promotion Details</h2>
+
+    <form style="margin-left: 40px;" action="">
+        <table>
+            <tbody>
+                <tr>
+                    <td><b>Employee Designation</b></td>
+                    <td width="20">:</td>
+                    <td><input id="empDes" type="text"></td>
+                </tr>
+                <tr>
+                    <td><b>Employee Salary</b></td>
+                    <td>:</td>
+                    <td><input id="empSal" placeholder="Enter monthly salary" type="text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button type="button" onclick="updateEmployeeDetails()">Update</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <script>
+
+        // Define an object to represent an employee. The object should include properties for employeeId, name, designation, and salary.
+        // Initialize the object with sample data.
+        var employee = {
+            employeeId: 2328900,
+            name: "Shiva sankar J",
+            designation: "Software Engineer",
+            salary: 20000,
+
+            // Add methods to the object to give a raise and change designation.
+            increaseSalary: function (amount) {
+                this.salary = amount;
+            },
+            changeDesignation: function (designation) {
+                this.designation = designation;
+            }
+        }
+
+        let designation = document.getElementById("designation");
+        let money = document.getElementById("money");
+
+        document.getElementById("name").innerText = employee.name;
+        document.getElementById("id").innerText = employee.employeeId
+
+        designation.innerText = employee.designation
+        money.innerText = "Rs " + employee.salary + "/m"
+
+        console.log(employee.name);
+        console.log(employee.employeeId);
+        console.log(employee.designation);
+        console.log(employee.salary);
+
+        // Use the methods to update the employee’s salary and designation.
+        // Create a function to display the employee’s details (employee ID, name, designation, and salary) in the console.
+        function updateEmployeeDetails() {
+            let getDesignation = document.getElementById("empDes").value;
+            let getSalary = document.getElementById("empSal").value;
+            employee.changeDesignation(getDesignation);
+            employee.increaseSalary(getSalary);
+
+            designation.innerText = employee.designation
+            money.innerText = "Rs " + employee.salary + "/m"
+
+            console.log(employee.name);
+            console.log(employee.employeeId);
+            console.log(employee.designation);
+            console.log(employee.salary);
+        }
+
+    </script>
+</body>
+
+</html>

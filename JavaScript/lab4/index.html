@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const employees = [
+            { employeeId: 101, name: "Alice Johnson", designation: "Software Engineer", salary: 75000 },
+            { employeeId: 102, name: "Bob Smith", designation: "Project Manager", salary: 90000 },
+            { employeeId: 103, name: "Charlie Brown", designation: "Data Analyst", salary: 70000 },
+            { employeeId: 104, name: "David White", designation: "HR Manager", salary: 85000 },
+        ];
+        console.log(employees);
+
+        // Add a new employee to the array:
+        employees.push({ employeeId: 105, name: "Emma Davis", designation: "UI/UX Designer", salary: 72000 });
+        console.log(employees);
+
+        // Remove an employee from the array based on their index:
+        function removeEmployee(myIndex) {
+            employees.splice(myIndex, 1)
+            console.log(employees);
+        }
+        removeEmployee(1);
+
+        // Create a function to display each employee’s details in the console:
+        function displayEmployeeDetails() {
+            employees.forEach((employee) => {
+                console.log(employee);
+            })
+        }
+        displayEmployeeDetails();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Grade-classification</title>
+    <style>
+        p {
+            margin: 20px;
+            padding: 20px;
+            font-size: x-large;
+            background-color: lightblue;
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grade classification</h1>
+    <form id="myForm">
+        <table style="margin-left: 60px" width="300px">
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td><input type="text" id="html" min="1" max="100" autofocus /></td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td><input type="text" id="css" /></td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td><input type="text" id="javaScript" /></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><input type="text" id="total" disabled /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" onclick="calculateGrade()">
+                            Calculate Grade
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div>
+        <p id="text">Result loading...</p>
+    </div>
+    <script>
+
+
+        let idText = document.getElementById("text");
+
+        function reset(message) {
+            alert(message);
+            document.getElementById("myForm").reset();
+            change("Result loading...", "lightblue", "black");
+        }
+
+        function change(message, bgColor, color) {
+            idText.innerText = message;
+            idText.style.backgroundColor = bgColor;
+            idText.style.color = color;
+        }
+
+        function calculateGrade() {
+            let htmlValue = parseInt(document.getElementById("html").value);
+            let cssValue = parseInt(document.getElementById("css").value);
+            let javaScriptValue = parseInt(
+                document.getElementById("javaScript").value
+            );
+
+            let sum = htmlValue + cssValue + javaScriptValue;
+            console.log(sum);
+            document.getElementById("total").value = sum;
+
+            if (isNaN(sum)) {
+                reset("Please type only a valid number in all the fields!");
+
+            } else {
+                if ((htmlValue < 0 || htmlValue > 100) || (cssValue < 0 || cssValue > 100) || (javaScriptValue < 0 || javaScriptValue > 100)) {
+                    reset("Please type only a valid number between 0 and 100!");
+                }
+                else {
+                    if (htmlValue < 50 || cssValue < 50 || javaScriptValue < 50) {
+                        change("Fail", "Red", "white");
+                    } else {
+                        if (sum >= 240) {
+                            change("First Class", "green", "whitesmoke");
+                        } else if (sum >= 210 && sum <= 239) {
+                            change("Second Class", "yellow", "black");
+                        } else if (sum >= 180 && sum <= 209) {
+                            change("Third Class", "lightgreen", "black");
+                        } else if (sum >= 150 && sum <= 179) {
+                            change("Pass", "black", "white");
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

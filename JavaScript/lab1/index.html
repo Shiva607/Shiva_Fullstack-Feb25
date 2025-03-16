@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Working-with-variables</title>
+</head>
+
+<body>
+    <div>
+        <h1>Working with variables</h1>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <button onclick="triggerAction()">Clik here</button>
+    </div>
+    <script>
+        var userName = "Suresh";
+        let userAge = 28;
+        const isEmployee = true;
+
+        function triggerAction() {
+            document.getElementById("p1").innerHTML = "The datatype of " + userName + " is " + typeof (userName);
+            document.getElementById("p2").innerHTML = "The datatype of " + userAge + " is " + typeof (userAge);
+            document.getElementById("p3").innerHTML = "The datatype of " + isEmployee + " is " + typeof (isEmployee);
+        }
+    </script>
+</body>
+
+</html>
