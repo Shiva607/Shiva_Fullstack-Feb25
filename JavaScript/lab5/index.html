@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up form</title>
+</head>
+
+<body>
+    <div align="center">
+        <form id="myForm">
+            <fieldset style="width: 400px;">
+                <table align="center" style="margin-left: 30px;">
+                    <legend align="center">Sign Up</legend>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <p id="errorMessage" style="text-align: center; font-weight: bold;"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="120px">Name</td>
+                            <td><input type="text" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td><input type="text" id="ph"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit">Submit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phNo = document.getElementById('ph').value;
+                const errorMessage = document.getElementById('errorMessage');
+
+                try {
+                    if (!name || !email || !phNo) {
+                        throw new Error('All fields are required')
+                    }
+                    if (!/^[a-zA-Z\s]+$/.test(name)) {
+                        throw new Error('Name should only contain letters and spaces')
+                    }
+                    if (!email.includes('@') || !email.includes('.') || email.length < 6) {
+                        throw new Error('Invalid email format');
+                    }
+                    if (!/^\d{10}$/.test(phNo)) {
+                        throw new Error('Phone number must be exactly 10 digits')
+                    }
+                    errorMessage.style.color = 'Green';
+                    errorMessage.innerText = "Form submitted successfully"
+
+                } catch (error) {
+                    errorMessage.style.color = 'Red';
+                    errorMessage.innerHTML = error.message;
+                }
+            })
+        </script>
+    </div>
+</body>
+
+
+</html>
