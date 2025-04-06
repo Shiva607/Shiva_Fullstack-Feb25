@@ -4,3 +4,5 @@ output1.txt
 uppercaseOutput.txt
 uppercaseOutput1.txt
 output.txt.gz
+node_modules
+package-lock.json
