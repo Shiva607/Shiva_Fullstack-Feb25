@@ -58,7 +58,3 @@ Use the `--template minimal` option if:
 - You want full control and no clutter.
 - You're an advanced user who prefers to add things manually.
 - You're learning and want to understand React without distractions.
-
----
-
-Would you like a sample `App.js` and `index.js` to go with this?
