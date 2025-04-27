@@ -7,6 +7,7 @@ import MountVsUnmount from './components/MountVsUnmount';
 import LoginForm from './components/context/LoginForm.jsx';
 import Dashboard from './components/context/Dashboard.jsx';
 import { UserProvider } from './context/UserContext';
+import FilterEmployee from './components/FilterEmployee.jsx';
 
 function App() {
 	const [show, setShow] = useState(true);
@@ -72,6 +73,9 @@ function App() {
 				// 2. The MountVsUnmount component is unmounted (removed from DOM). 	
 			*/}
 			{show && <MountVsUnmount setStatus={setStatus} />}
+			<br />
+			<hr />
+			<FilterEmployee />
 			<br />
 			<hr />
 		</div>
