@@ -1,5 +1,7 @@
 import React from 'react';
-import RouterApp from './components/routing/RouterApp.jsx';
+
+// import RouterApp from './components/routing/RouterApp.jsx';
+import RouterApp from './components/dynamic-routing/RouterApp.jsx';
 
 function App() {
 	return (
