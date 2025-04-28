@@ -8,7 +8,7 @@ function App() {
 		<div style={{ textAlign: 'center' }}>
 			<h1>Hello React</h1>
 			<RouterApp />
-			<h3 style={{ marginTop: 350 }}>Footer Page</h3>
+			<h3 style={{ marginTop: 250 }}>Footer Page</h3>
 		</div>
 	);
 }
