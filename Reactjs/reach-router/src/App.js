@@ -2,7 +2,8 @@ import React from 'react';
 
 // import RouterApp from './components/routing/RouterApp.jsx';
 // import RouterApp from './components/dynamic-routing/RouterApp.jsx';
-import RouterApp from './components/nested-routing/RouterApp.jsx';
+// import RouterApp from './components/nested-routing/RouterApp.jsx';
+import RouterApp from './components/routing-lab-1/RouterApp.jsx';
 
 function App() {
 	return (
