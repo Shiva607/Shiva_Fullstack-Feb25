@@ -8,6 +8,9 @@ import LoginForm from './components/context/LoginForm.jsx';
 import Dashboard from './components/context/Dashboard.jsx';
 import { UserProvider } from './context/UserContext';
 import FilterEmployee from './components/FilterEmployee.jsx';
+import ReactMemo from './components/Performance/ReactMemo.jsx';
+import UseCallbackMemo from './components/Performance/UseCallbackMemo.jsx';
+import UseMemo from './components/Performance/UseMemo.jsx';
 
 function App() {
 	const [show, setShow] = useState(true);
@@ -78,6 +81,13 @@ function App() {
 			<FilterEmployee />
 			<br />
 			<hr />
+			<ReactMemo />
+			<br />
+			<hr />
+			<UseCallbackMemo />
+			<br />
+			<hr />
+			<UseMemo />
 		</div>
 	);
 }
