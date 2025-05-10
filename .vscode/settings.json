@@ -1,0 +1,222 @@
+{
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": true,
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "1",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "2",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "3",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "4",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "5",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "6",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "7",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "8",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "9",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "10",
+      "color": "#00ecff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "",
+      "color": "#90EE90",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    }
+  ],
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "turboConsoleLog.insertEmptyLineAfterLogMessage": false,
+  "turboConsoleLog.insertEmptyLineBeforeLogMessage": false,
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.logFunction": "log",
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.logMessageSuffix": ":",
+  "turboConsoleLog.logType": "log",
+  "turboConsoleLog.quote": "`",
+  "turboConsoleLog.wrapLogMessage": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.singleQuote": true,
+    "prettier.semi": true,
+    "prettier.arrowParens": "always",
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.singleQuote": true,
+    "prettier.semi": true,
+    "prettier.arrowParens": "always",
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.singleQuote": true,
+    "prettier.semi": true,
+    "prettier.arrowParens": "always",
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": true
+  },
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "cSpell.words": [
+    "dbank",
+    "Ecommerce",
+    "Emojipedia",
+    "exceljs",
+    "Motoko",
+    "networkidle",
+    "zerostep"
+  ],
+  "AutoPreview.serverURL": "http://localhost:5173/",
+  "AutoPreview.background": "transparent",
+  "[motoko]": {
+    "editor.defaultFormatter": "dfinity-foundation.vscode-motoko"
+  },
+  "debug.javascript.autoAttachFilter": "always",
+  "cucumberautocomplete.steps": [
+    "features/step_definitions/**/*.js",
+    "Playwright-BDD/step_definitions/**/*.{js,ts}"
+  ],
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  },
+  "cucumberautocomplete.syncfeatures": "features/**/*feature",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "github.copilot.enable": {
+    "*": false
+  }
+}
