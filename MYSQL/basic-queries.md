@@ -236,6 +236,18 @@ DESC emp;
 
 ---
 
+## **Step 10: Drop the Database**
+
+```sql
+-- Deletes the 'emp' table permanently
+DROP DATABASE mydb;
+
+-- verify or check details about your database:
+SHOW DATABASES;
+```
+
+---
+
 ## **clear difference** between the `ALTER` and `UPDATE` commands in SQL (especially MySQL), both in purpose and usage:
 
 ---
