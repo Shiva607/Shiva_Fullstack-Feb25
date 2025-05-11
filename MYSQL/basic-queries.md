@@ -247,10 +247,25 @@ SHOW DATABASES;
 ```
 
 ---
+## **Step 11: Rename the Database**
+
+MySQL **does not support** a direct `RENAME DATABASE` command. However, you can effectively rename a database using a **4-line approach** by creating a new database and moving all objects to it.
+
+Here’s a simple 4-line workaround:
+
+```sql
+CREATE DATABASE new_db;                     -- Step 1: Create new database
+RENAME TABLE old_db.table1 TO new_db.table1; -- Step 2: Repeat for all tables
+DROP DATABASE old_db;                       -- Step 3: Drop old database (optional)
+-- Step 4: Update app configs if needed     -- Step 4: Adjust application configs
+```
+
+You’ll need to run the `RENAME TABLE` command for **each table manually** or script it via a tool.
+
+---
 
 ## **clear difference** between the `ALTER` and `UPDATE` commands in SQL (especially MySQL), both in purpose and usage:
 
----
 
 ### **`ALTER` – Modify Table Structure**
 
